@@ -26,5 +26,20 @@ public class App {
         utilitario.viaja(250);
         utilitario.viaja(150);
         System.out.println(utilitario);
+
+
+        
+        Carro suv = new Carro("SUV", TipoCombustivel.GASOLINA, TipoCombustivel.FLEX, 8, 55);
+    
+        System.out.println("\n\n----------------");
+        System.out.println("\nAbastencendo carro suv com gasolina");
+        suv.abastece(TipoCombustivel.FLEX, 55);
+        System.out.println(suv);
+        System.out.println("\nViajando com o carro suv");
+        suv.viaja(750);
+        suv.viaja(560);
+        System.out.println(suv);
+    
+    
     }
 }

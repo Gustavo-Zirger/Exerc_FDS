@@ -9,6 +9,15 @@ public class Motor {
         this.consumo = consumo;
     }
 
+    public Motor(TipoCombustivel tipoMotor, int consumoGasolina, int consumoAlcool) {
+        this.tipoMotor = tipoMotor;
+        if (tipoMotor == TipoCombustivel.GASOLINA) {
+            this.consumo = consumoGasolina;
+        } else if (tipoMotor == TipoCombustivel.ALCOOL) {
+            this.consumo = consumoAlcool;
+        }
+    }
+
     public int getConsumo() {
         return this.consumo;
     }
